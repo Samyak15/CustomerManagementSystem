@@ -2,12 +2,10 @@ package com.CustomerManagement.customerManagement.Entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.Id;
+
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @ToString
 @Entity
 @Table(name = "customer")
