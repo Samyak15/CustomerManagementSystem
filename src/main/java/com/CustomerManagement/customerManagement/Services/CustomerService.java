@@ -12,4 +12,6 @@ public interface CustomerService {
     void updateCustomerDetails(String firstname, String lastname, String stre, String addr, String cty, String st, String mail, String phoneno, Long id);
 
     void deleteCustomer(Long id);
+
+
 }
