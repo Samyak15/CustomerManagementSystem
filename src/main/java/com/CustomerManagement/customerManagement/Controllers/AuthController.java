@@ -34,14 +34,14 @@ public class AuthController {
     private Logger logger = LoggerFactory.getLogger(AuthController.class);
 
     // Post Mapping for creating a new user
-    //@CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/createUser")
     public User createNewUser(@RequestBody User user) {
         return userService.createUser(user);
     }
 
     //Post Mapping for login a user
-
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/login")
     public ResponseEntity<JwtResponse> login(@RequestBody JwtRequest request) {
 

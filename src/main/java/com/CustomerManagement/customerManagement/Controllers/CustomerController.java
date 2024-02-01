@@ -24,7 +24,7 @@ public class CustomerController {
     private CustomerServiceImpl customerService;
 
     //Post mapping for creating a new customer
-    //@CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/createCustomer")
     public ResponseEntity<String> createNewCustomer(@RequestBody Customer customer) {
         customerService.createCustomer(customer);
@@ -33,7 +33,7 @@ public class CustomerController {
 
     //Put Mapping for updating the customer details
     @Modifying
-    //@CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://localhost:3000")
     @PutMapping("/updateCustomer")
     public ResponseEntity<String> updateCustomerDetails(@RequestBody CustomerModifyreq customerModifyreq) {
         System.out.println("controller");
@@ -52,7 +52,7 @@ public class CustomerController {
     }
 
     //Delete Mapping for deleting a customer
-    //@CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://localhost:3000")
     @DeleteMapping("/deleteCustomer")
     public ResponseEntity<String> deleteCustomer(@RequestParam Long id) {
         customerService.deleteCustomer(id);
@@ -60,14 +60,14 @@ public class CustomerController {
     }
 
     //Get Mapping for getting a particular customer based on id
-   // @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/{id}")
     public Optional<Customer> getCustomerUsingId(@PathVariable("id") Long id) {
         return customerService.getCustomerByid(id);
     }
 
     //Get Mapping for get the all Customers page based on the param provided to us
-   // @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/getAllCustomers")
     public Page<CustomerDto> getCustomerPage(@RequestParam Optional<String> searchtype, Optional<String> searchval, @RequestParam Optional<Integer> page, @RequestParam Optional<Integer> size, @RequestParam Optional<String> sortby) {
         Page<Customer> customerPage = customerService.findAllCustomers(searchtype, searchval, page, size, sortby);
