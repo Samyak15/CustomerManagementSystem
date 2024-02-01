@@ -9,6 +9,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.repository.query.Param;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -21,12 +23,13 @@ public class CustomerController {
     private CustomerServiceImpl customerService;
 
     @PostMapping("/createCustomer")
-    public void createNewCustomer(@RequestBody Customer customer){
+    public ResponseEntity<String> createNewCustomer(@RequestBody Customer customer){
         customerService.createCustomer(customer);
+        return new ResponseEntity<>("Success!", HttpStatus.OK);
     }
     @Modifying
     @PutMapping("/updateCustomer")
-    public void updateCustomerDetails(@RequestBody CustomerModifyreq customerModifyreq){
+    public ResponseEntity<String> updateCustomerDetails(@RequestBody CustomerModifyreq customerModifyreq){
         System.out.println("controller");
         String fn = customerModifyreq.getFirstname();
         String ln = customerModifyreq.getLastname();
@@ -38,11 +41,15 @@ public class CustomerController {
         String pn = customerModifyreq.getPhone();
         Long id = customerModifyreq.getId();
         customerService.updateCustomerDetails(fn,ln,str,add,ci,st,em,pn,id);
+
+        return new ResponseEntity<>("Success!", HttpStatus.OK);
     }
 
     @DeleteMapping("/deleteCustomer")
-    public void deleteCustomer(@RequestParam Long id){
+    public ResponseEntity<String> deleteCustomer(@RequestParam Long id){
+
         customerService.deleteCustomer(id);
+        return new ResponseEntity<>("Success!",HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
