@@ -1,9 +1,12 @@
 package com.CustomerManagement.customerManagement.Controllers;
 
+import com.CustomerManagement.customerManagement.Dto.CustomerDto;
 import com.CustomerManagement.customerManagement.Entities.Customer;
 import com.CustomerManagement.customerManagement.Models.CustomerModifyreq;
 import com.CustomerManagement.customerManagement.Services.CustomerServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
@@ -41,4 +44,30 @@ public class CustomerController {
     public void deleteCustomer(@RequestParam Long id){
         customerService.deleteCustomer(id);
     }
+
+    @GetMapping("/{id}")
+    public Optional<Customer> getCustomerUsingId(@PathVariable("id") Long id){
+        return customerService.getCustomerByid(id);
+    }
+
+    @GetMapping("/getAllCustomers")
+    public Page<CustomerDto> getCustomerPage(@RequestParam Optional<String> searchtype,Optional<String> searchval,@RequestParam Optional<Integer> page, @RequestParam Optional<Integer> size, @RequestParam Optional<String> sortby){
+        Page<Customer> customerPage = customerService.findAllCustomers(searchtype,searchval,page,size,sortby);
+        return  customerPage.map(this::convertToDTO);
+    }
+
+    private CustomerDto convertToDTO(Customer customer) {
+        CustomerDto customerDto = new CustomerDto();
+        customerDto.setId(customer.getId());
+        customerDto.setFirstName(customer.getFirstName());
+        customerDto.setLastName(customer.getLastName());
+        customerDto.setStreet(customer.getStreet());
+        customerDto.setAddress(customer.getAddress());
+        customerDto.setCity(customer.getCity());
+        customerDto.setState(customer.getState());
+        customerDto.setEmail(customer.getEmail());
+        customerDto.setPhone((customer.getPhone()));
+        return customerDto;
+    }
+
 }
