@@ -7,6 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
+// This is our User Entity class
 @Getter
 @Setter
 @NoArgsConstructor
@@ -14,16 +15,16 @@ import java.util.Collection;
 @Builder
 @ToString
 @Entity
-@Table(name  = "user")
+@Table(name = "user")
 public class User implements UserDetails {
+
+    //Defining all the fields
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private long id;
-
     @Column(name = "username")
     private String username;
-
     @Column(name = "password")
     private String password;
 

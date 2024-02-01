@@ -3,6 +3,7 @@ package com.CustomerManagement.customerManagement.Models;
 import lombok.Getter;
 import lombok.Setter;
 
+// This is our model class for Customer Modify Request
 @Getter
 @Setter
 public class CustomerModifyreq {

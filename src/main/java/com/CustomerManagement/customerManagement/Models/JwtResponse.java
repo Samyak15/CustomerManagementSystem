@@ -5,6 +5,7 @@ import lombok.*;
 
 import java.io.Serializable;
 
+//This is model class for jwt Response
 @Setter
 @Getter
 @NoArgsConstructor
@@ -14,5 +15,4 @@ import java.io.Serializable;
 public class JwtResponse{
     private String jwtToken;
     private String username;
-
 }

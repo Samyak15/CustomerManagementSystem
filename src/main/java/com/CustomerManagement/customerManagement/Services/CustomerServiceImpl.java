@@ -1,9 +1,7 @@
 package com.CustomerManagement.customerManagement.Services;
 
 import com.CustomerManagement.customerManagement.DAO.CustomerRepository;
-import com.CustomerManagement.customerManagement.Dto.CustomerDto;
 import com.CustomerManagement.customerManagement.Entities.Customer;
-import com.CustomerManagement.customerManagement.Models.searchreq;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;

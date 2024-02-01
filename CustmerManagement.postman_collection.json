@@ -1,0 +1,1165 @@
+{
+	"info": {
+		"_postman_id": "7d5b3e5f-7670-405e-a477-811f37b49565",
+		"name": "CustmerManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24330124"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"test@sunebasedata.com\",\r\n    \"password\":\"Test@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/auth/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"test@sunebasedata.com\",\r\n    \"password\":\"Test@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Feb 2024 12:35:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jwtToken\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3OTA5MDksImV4cCI6MTcwNjc5ODEwOX0._lzsG2ToVWA39MVDXPOh4bJTQ3luily9SMsfCDrjwMErf9vAMaqKDKLdbAqb7P3cPLL5JU0ea4Cn7GOGwAjl7w\",\n    \"username\": \"test@sunebasedata.com\"\n}"
+				},
+				{
+					"name": "http://localhost:8080/auth/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"test@sunebasedata.com\",\r\n    \"password\":\"Test@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Feb 2024 12:58:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jwtToken\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3OTIzMDEsImV4cCI6MTcwNjc5OTUwMX0.Vgxek7ixjNIjIJX42dJCn3kdPaIYioMncxAVfMxmW3TRhWnA5njrATa7WCK5PX2KTbNca_tGUxJXfsmzQS98Vg\",\n    \"username\": \"test@sunebasedata.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/auth/createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"test@sunebasedata.com\",\r\n    \"password\":\"Test@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"createUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/auth/createUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"test@sunebasedata.com\",\r\n    \"password\":\"Test@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/createUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"createUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Feb 2024 12:58:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"username\": \"test@sunebasedata.com\",\n    \"password\": \"$2a$10$mnFqo/lSyK.WIBFJ.CyYJeKiR1wESnxZ49vkrCsbMd/QROfIwE17y\",\n    \"enabled\": true,\n    \"authorities\": null,\n    \"accountNonLocked\": true,\n    \"accountNonExpired\": true,\n    \"credentialsNonExpired\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/customer/createCustomer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3OTA5MDksImV4cCI6MTcwNjc5ODEwOX0._lzsG2ToVWA39MVDXPOh4bJTQ3luily9SMsfCDrjwMErf9vAMaqKDKLdbAqb7P3cPLL5JU0ea4Cn7GOGwAjl7w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Header",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY2OTM5ODcsImV4cCI6MTcwNjcwMTE4N30.Y7tw6NuWCtXMPyiVdgmg96x2LJTXjpgj5AW9c20Ht-25xvMyKjJVUqqMi4STB-ZZmUHGxnew1T3YZiVWFFS-wQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Jane\",\r\n    \"lastName\":\"Doe\",\r\n    \"street\":\"Elvune Street\",\r\n    \"address\":\"H no 2\",\r\n    \"city\":\"Delhi\",\r\n    \"state\":\"Delhi\",\r\n    \"email\":\"sam@gmail.com\",\r\n    \"phone\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer/createCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"createCustomer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/customer/createCustomer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Header",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY2OTM5ODcsImV4cCI6MTcwNjcwMTE4N30.Y7tw6NuWCtXMPyiVdgmg96x2LJTXjpgj5AW9c20Ht-25xvMyKjJVUqqMi4STB-ZZmUHGxnew1T3YZiVWFFS-wQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Jane\",\r\n    \"lastName\":\"Doe\",\r\n    \"street\":\"Elvune Street\",\r\n    \"address\":\"H no 2\",\r\n    \"city\":\"Delhi\",\r\n    \"state\":\"Delhi\",\r\n    \"email\":\"sam@gmail.com\",\r\n    \"phone\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/customer/createCustomer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"createCustomer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Feb 2024 12:49:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Customer Added!"
+				},
+				{
+					"name": "http://localhost:8080/customer/createCustomer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Header",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY2OTM5ODcsImV4cCI6MTcwNjcwMTE4N30.Y7tw6NuWCtXMPyiVdgmg96x2LJTXjpgj5AW9c20Ht-25xvMyKjJVUqqMi4STB-ZZmUHGxnew1T3YZiVWFFS-wQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Jane\",\r\n    \"lastName\":\"Doe\",\r\n    \"street\":\"Elvune Street\",\r\n    \"address\":\"H no 2\",\r\n    \"city\":\"Delhi\",\r\n    \"state\":\"Delhi\",\r\n    \"email\":\"sam@gmail.com\",\r\n    \"phone\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/customer/createCustomer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"createCustomer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Feb 2024 12:58:47 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Success!"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/customer/updateCustomer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3Njk3NzQsImV4cCI6MTcwNjc3Njk3NH0.5Kf4JuoEUz0NIOoeBQShBrZxYMll58upKE6p4IHq0WQOGO8XucVqej46LBYGkAdFe2_cPAlbGEF0myOtGO7SjQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Header",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3MDY5NjEsImV4cCI6MTcwNjcxNDE2MX0.S_TlWyx_FZWS8b2buqKEjC1rIaHcPpF4aXz5Hq-YaoBN7mosrPFiYeVzyWygs6ZJBIN6-ZkGvfCiJuL1HTwgJg",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\":\"Jan\",\r\n    \"lastname\":\"Doe\",\r\n    \"street\":\"Elvune Street\",\r\n    \"address\":\"H no 2\",\r\n    \"state\":\"Delhi\",\r\n    \"email\":\"sam@gmail.com\",\r\n    \"phone\":\"1278\",\r\n    \"id\":6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer/updateCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"updateCustomer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/customer/updateCustomer",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Header",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3MDY5NjEsImV4cCI6MTcwNjcxNDE2MX0.S_TlWyx_FZWS8b2buqKEjC1rIaHcPpF4aXz5Hq-YaoBN7mosrPFiYeVzyWygs6ZJBIN6-ZkGvfCiJuL1HTwgJg",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\":\"Jan\",\r\n    \"lastname\":\"Doe\",\r\n    \"street\":\"Elvune Street\",\r\n    \"address\":\"H no 2\",\r\n    \"state\":\"Delhi\",\r\n    \"email\":\"sam@gmail.com\",\r\n    \"phone\":\"1278\",\r\n    \"id\":6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/customer/updateCustomer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"updateCustomer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Feb 2024 12:59:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Success!"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/customer/deleteCustomer?id=4",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3MjU1MzIsImV4cCI6MTcwNjczMjczMn0.xz7zKu8JXikgTCPJnBdHFP5UTT9psO51Cq9ms8znl5GHpHL1vSMxLPthVoFhZ49gfazUYOVtC0bH77pa8gR5Pw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customer/deleteCustomer?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"deleteCustomer"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/customer/deleteCustomer?id=4",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customer/deleteCustomer?id=8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"deleteCustomer"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Feb 2024 12:59:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Success!"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/customer/3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3MjY0NDgsImV4cCI6MTcwNjczMzY0OH0.U-EMZDZhrrchJzxXpxtaC_g9Sf5TFQ6RqkzXAD6rurMxrMnzqq3Xvwhw9TKWaJ3G9Mpz5-EpvSsmHx-X8abkeQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customer/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/customer/getAllCustomers?searchtype=city&searchval=delhi&page=1&size=2&sortBy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3OTA5MDksImV4cCI6MTcwNjc5ODEwOX0._lzsG2ToVWA39MVDXPOh4bJTQ3luily9SMsfCDrjwMErf9vAMaqKDKLdbAqb7P3cPLL5JU0ea4Cn7GOGwAjl7w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Header",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3OTA5MDksImV4cCI6MTcwNjc5ODEwOX0._lzsG2ToVWA39MVDXPOh4bJTQ3luily9SMsfCDrjwMErf9vAMaqKDKLdbAqb7P3cPLL5JU0ea4Cn7GOGwAjl7w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/customer/getAllCustomers?searchtype=city&searchval=delhi&page=1&size=2&sortBy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"getAllCustomers"
+					],
+					"query": [
+						{
+							"key": "searchtype",
+							"value": "city"
+						},
+						{
+							"key": "searchval",
+							"value": "delhi"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						},
+						{
+							"key": "sortBy",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/customer/getAllCustomers?searchtype=city&searchval=delhi&page=1&size=2&sortBy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Header",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3OTA5MDksImV4cCI6MTcwNjc5ODEwOX0._lzsG2ToVWA39MVDXPOh4bJTQ3luily9SMsfCDrjwMErf9vAMaqKDKLdbAqb7P3cPLL5JU0ea4Cn7GOGwAjl7w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/customer/getAllCustomers?searchtype=city&searchval=delhi&page=1&size=2&sortBy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"getAllCustomers"
+							],
+							"query": [
+								{
+									"key": "searchtype",
+									"value": "city"
+								},
+								{
+									"key": "searchval",
+									"value": "delhi"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Feb 2024 12:39:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"id\": 5,\n            \"firstName\": \"Jane\",\n            \"lastName\": \"Doe\",\n            \"street\": \"Elvune Street\",\n            \"address\": \"H no 2\",\n            \"city\": \"Delhi\",\n            \"state\": \"Delhi\",\n            \"email\": \"sam@gmail.com\",\n            \"phone\": \"12345678\"\n        },\n        {\n            \"id\": 6,\n            \"firstName\": \"Jan\",\n            \"lastName\": \"Doe\",\n            \"street\": \"Elvune Street\",\n            \"address\": \"H no 2\",\n            \"city\": \"Delhi\",\n            \"state\": \"Delhi\",\n            \"email\": \"sam@gmail.com\",\n            \"phone\": \"1278\"\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 1,\n        \"pageSize\": 2,\n        \"sort\": {\n            \"empty\": false,\n            \"sorted\": true,\n            \"unsorted\": false\n        },\n        \"offset\": 2,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"last\": false,\n    \"totalPages\": 4,\n    \"totalElements\": 7,\n    \"size\": 2,\n    \"number\": 1,\n    \"sort\": {\n        \"empty\": false,\n        \"sorted\": true,\n        \"unsorted\": false\n    },\n    \"first\": false,\n    \"numberOfElements\": 2,\n    \"empty\": false\n}"
+				},
+				{
+					"name": "http://localhost:8080/customer/getAllCustomers?searchtype=city&searchval=delhi&page=1&size=2&sortBy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Header",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmViYXNlZGF0YS5jb20iLCJpYXQiOjE3MDY3OTA5MDksImV4cCI6MTcwNjc5ODEwOX0._lzsG2ToVWA39MVDXPOh4bJTQ3luily9SMsfCDrjwMErf9vAMaqKDKLdbAqb7P3cPLL5JU0ea4Cn7GOGwAjl7w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/customer/getAllCustomers?searchtype=city&searchval=delhi&page=1&size=2&sortBy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"getAllCustomers"
+							],
+							"query": [
+								{
+									"key": "searchtype",
+									"value": "city"
+								},
+								{
+									"key": "searchval",
+									"value": "delhi"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Feb 2024 12:59:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"id\": 5,\n            \"firstName\": \"Jane\",\n            \"lastName\": \"Doe\",\n            \"street\": \"Elvune Street\",\n            \"address\": \"H no 2\",\n            \"city\": \"Delhi\",\n            \"state\": \"Delhi\",\n            \"email\": \"sam@gmail.com\",\n            \"phone\": \"12345678\"\n        },\n        {\n            \"id\": 6,\n            \"firstName\": \"Jan\",\n            \"lastName\": \"Doe\",\n            \"street\": \"Elvune Street\",\n            \"address\": \"H no 2\",\n            \"city\": \"Delhi\",\n            \"state\": \"Delhi\",\n            \"email\": \"sam@gmail.com\",\n            \"phone\": \"1278\"\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 1,\n        \"pageSize\": 2,\n        \"sort\": {\n            \"empty\": false,\n            \"sorted\": true,\n            \"unsorted\": false\n        },\n        \"offset\": 2,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"last\": false,\n    \"totalElements\": 9,\n    \"totalPages\": 5,\n    \"size\": 2,\n    \"number\": 1,\n    \"sort\": {\n        \"empty\": false,\n        \"sorted\": true,\n        \"unsorted\": false\n    },\n    \"first\": false,\n    \"numberOfElements\": 2,\n    \"empty\": false\n}"
+				}
+			]
+		}
+	]
+}
